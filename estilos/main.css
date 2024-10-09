@@ -1,0 +1,104 @@
+html {
+    font-size: 16px;
+}
+
+/*Voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferete*/
+@media screen and (max-width:400PX) {
+    html {
+        font-size: 9.411764705882353px;
+    }
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    background: black;
+    font-family: "Lato";
+    font-size: 1.7rem;
+    /* esta etiquea toma el tamano padre(font-size de 16px) y lo va a multiplicar por 1.7*/
+    font-style: normal;
+    /**/
+    font-weight: 800;
+    /*grosor de la letra */
+    line-height: 1.882;
+    /*muestra el interlieneado*/
+    color: black;
+    /*color */
+    margin: 0;
+    /* margen exterior */
+    padding: 12px;
+    /*margen interior  */
+}
+
+/*estilos a los links*/
+
+a {
+    color: #cf1767;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+/* cunado soloca el mouse coloca el color */
+a:focus,
+/* da como un brillo que no se nota tanto */
+a:active {
+    /*da el color */
+    color: #000;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*tipografia*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    margin-top: 6rem;
+    /*margen hacia arriba */
+    margin-bottom: 16rem;
+    /*margen hacia abajo*/
+}
+
+@media screen and (max-width:600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        margin-top: 6rem;
+        /*margen hacia arriba */
+
+    }
+}
