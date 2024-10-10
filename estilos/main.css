@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    background: black;
+    background: #fadbd8;
     font-family: "Lato";
     font-size: 1.7rem;
     /* esta etiquea toma el tamano padre(font-size de 16px) y lo va a multiplicar por 1.7*/
