@@ -165,32 +165,32 @@ h5, .h5, h6, .h6{
     line-height: calc(78px-(18px*2));
 }
 
-.header-main-nav{
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
+.header-main-nav{ /*Llamamos a las clases asignadas*/
+    font-family: "Roboto", sans-serif;/*Define la fuente */
+    font-size: 13px;/* Establece el tamaño de la fuente */
+    text-transform: uppercase;/* Convierte el texto a mayúsculas */
     letter-spacing: 0.3rem; /*pixeles entre letras */
-    color: rgba(255, 255, 255, 0.5);
-    margin: 0 0 0 4px;
+    color: rgba(255, 255, 255, 0.5);/* Color */
+    margin: 0 0 0 4px; /*Damos margen en estido de las manecillas ddel reloj*/
     z-index: 2;/*posicionar la caja en la posicion z */
-    position: static;
+    position: static;/* Posición estática por defecto */
 }
-.header-main-nav li{
-    margin: 0 2rem;
+.header-main-nav li{/*Llamamos a las clases asignadas*/
+    margin: 0 2rem;/*Damos margen pero primero abrriba y abajo y luego de deracha a izquierda*/
 }
-.header-main-nav a {
-    color: rgba(255, 255, 255, 0.5);
-    position: relative;
+.header-main-nav a {/*Llamamos a las clases asignadas*/
+    color: rgba(255, 255, 255, 0.5);/* Color */
+    position: relative;/*damos una posicion relativa */
 }
 .header-main-nav a:hover,
 .header-main-nav a:focus,
-.header-main-nav a:active{
+.header-main-nav a:active{/*Llamamos a las clases asignadas*/
     color: #ffffff;
 }
-.header-main-nav .current a {
+.header-main-nav .current a {/*Llamamos a las clases asignadas*/
     color: #ffffff;
 }
-.header-social {
+.header-social {/*Llamamos a las clases asignadas*/
     font-size: 2rem;
     margin: 0;
     position: absolute;
@@ -198,14 +198,14 @@ h5, .h5, h6, .h6{
     right: 40px;
 }
 
-.header-social li{
+.header-social li{/*Llamamos a las clases asignadas*/
     margin-right: 1rem;
 }
 
-.header-social li:last-child{
+.header-social li:last-child{/*Llamamos a las clases asignadas*/
     margin-right: 0;
 }
 
-.header-social li a{
+.header-social li a{/*Llamamos a las clases asignadas*/
     color: rgba(255, 255, 255, 0.7);
 }
