@@ -70,7 +70,7 @@ h6,
     font-family: "Frank Ruh1 libre", serif; 
     font-weight: 500;
     font-style: normal;
-    color: #fff;
+    color: black;
 }
 
 h1,
@@ -163,4 +163,49 @@ h5, .h5, h6, .h6{
 .header-nav-wrap li a {
     display: block;
     line-height: calc(78px-(18px*2));
+}
+
+.header-main-nav{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem; /*pixeles entre letras */
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 0 4px;
+    z-index: 2;/*posicionar la caja en la posicion z */
+    position: static;
+}
+.header-main-nav li{
+    margin: 0 2rem;
+}
+.header-main-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.header-main-nav a:hover,
+.header-main-nav a:focus,
+.header-main-nav a:active{
+    color: #ffffff;
+}
+.header-main-nav .current a {
+    color: #ffffff;
+}
+.header-social {
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.header-social li{
+    margin-right: 1rem;
+}
+
+.header-social li:last-child{
+    margin-right: 0;
+}
+
+.header-social li a{
+    color: rgba(255, 255, 255, 0.7);
 }
