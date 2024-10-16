@@ -66,7 +66,7 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6 { /*Llamamos a las funtes y les damos una tipografias y color */
     font-family: "Frank Ruh1 libre", serif; 
     font-weight: 500;
     font-style: normal;
@@ -108,7 +108,7 @@ h5, .h5, h6, .h6{
 }
 
 
-/*Estilos del header*/
+/*Estilos del header damos posicion, fondos, ancho, altura, color, margen, bordes */
 .s-header{/*organiza los estilos*/
     position: absolute; /*Posiciona el elemento de forma absoluta respecto a su primer contenedor posicionado*/
     top: 2rem; 
@@ -215,15 +215,15 @@ h5, .h5, h6, .h6{
 *-----------------------------------------------------------------------------------------*/
 .header-menu-toggle {/*Llamamos a las clases asignadas*/
     display: none; /* Oculta el elemento en la página. */
-    height: 42px; /* Establece la altura de 42 píxeles. */
-    width: 42px; /* Establece el ancho de 42 píxeles. */
-    line-height: 42px; /* Establece la altura en 42 píxeles, para centrar el texto verticalmente. */
-    font-family: "Lora", serif; /* Define la fuente del texto como "Lora", con una fuente serif como respaldo. */
-    font-size: 1.4rem; /* Establece el tamaño de la fuente en 1.4 rem */
+    height: 42px; /* Establece la altura  */
+    width: 42px; /* Establece el ancho */
+    line-height: 42px; /* Establece la altura , para centrar el texto verticalmente. */
+    font-family: "Lora", serif; /* Define la fuente del texto  */
+    font-size: 1.4rem; /* Establece el tamaño de la fuente  */
     text-transform: uppercase; /* Convierte todo el texto a mayúsculas. */
-    letter-spacing: .2rem; /* Aumenta el espacio entre las letras en 0.2 rem. */
-    color: rgba(255, 255, 255, 0.5); /* Establece el color del texto en blanco con una opacidad del 50%. */
-    transition: all .3s; /* Aplica una transición a todas las propiedades que cambien, durando 0.3 segundos. */
+    letter-spacing: .2rem; /* Aumenta el espacio entre las letras */
+    color: rgba(255, 255, 255, 0.5); /* Establece el color del texto en blanco  */
+    transition: all .3s; /* Aplica una transición a todas las propiedades que cambien. */
     position: absolute; /* Posiciona el elemento de forma absoluta respecto a su contenedor más cercano con posición relativa. */
     right: 32px; /* Coloca el elemento a 32 píxeles desde el lado derecho del contenedor. */
     top: 18px; /* Coloca el elemento a 18 píxeles desde la parte superior del contenedor. */
@@ -236,16 +236,16 @@ h5, .h5, h6, .h6{
 }
 
 .header-menu-toggle span {/*Llamamos a las clases asignadas*/
-    display: block;
-    width: 24px;
-    height: 2px;
-    margin-top: -1px;
-    background-color: #ffffff;
-    transition: all .5s;
+    display: block;/*Difinimos el elemento como un bloque */
+    width: 24px; /* Establece el ancho */
+    height: 2px;/* Establece la altura  */
+    margin-top: -1px;/*Aplicamos un margen */
+    background-color: #ffffff;/*Aplicamos un fondo */
+    transition: all .5s; /*Configuramos la transicion */
     font: 0/0 a;
-    text-shadow: none;
+    text-shadow: none;/*Sin sombras de texto*/
     color: transparent;
-    position: absolute;
+    position: absolute; /*Posicion*/
     top: 50%;
     left: 9px;
     right: auto;
@@ -253,7 +253,7 @@ h5, .h5, h6, .h6{
 }
 
 .header-menu-toggle span::before,
-.header-menu-toggle span::after {/*Llamamos a las clases asignadas*/
+.header-menu-toggle span::after {/*Llamamos a las clases asignadas para darles un ancho, altura, un fondo, posicion*/
     content: '';
     width: 100%;
     height: 100%;
@@ -263,31 +263,31 @@ h5, .h5, h6, .h6{
     transition: all .5s;
 }
 
-.header-menu-toggle span::before {/*Llamamos a las clases asignadas*/
+.header-menu-toggle span::before {/*Llamamos a las clases asignadas y coloca el elemento -9px*/
     top: -9px;
 }
 
-.header-menu-toggle span::after {
+.header-menu-toggle span::after {/*Al igual que el anterior, indica que la posición del lado inferior*/
     bottom: -9px;
 }
 
-.header-menu-toggle.is-clicked span {
+.header-menu-toggle.is-clicked span {/*Llamamos a las clases asignadas y colocamos un fondo y una transicion */
     background-color: rgba(255, 255, 255, 0);
     transition: all .1s;
 }
 
 .header-menu-toggle.is-clicked span::before,
-.header-menu-toggle.is-clicked span::after {
+.header-menu-toggle.is-clicked span::after { /*Llamamos a las clases asignadas y colocamos un fondo  */
     background-color: white;
 }
 
-.header-menu-toggle.is-clicked span::before {
+.header-menu-toggle.is-clicked span::before {/*Cambiamos la posicion y la rotacion de un icono*/
     top: 0;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
-.header-menu-toggle.is-clicked span::after {
+.header-menu-toggle.is-clicked span::after {/*Cambiamos la posicion y la rotacion de un icono*/
     bottom: 0;
     -webkit-transform: rotate(225deg);
     transform: rotate(225deg);
@@ -297,44 +297,44 @@ h5, .h5, h6, .h6{
 * responsive
 * header
 --------------------------------------------------------------------*/
-@media screen and (max-width:1200px) {
-    .header-main-nav {
+@media screen and (max-width:1200px) { /*Aplicamos estilos específicos cuando la pantalla del dispositivo tiene un ancho máximo de  píxeles. 1200*/
+    .header-main-nav {/*Damos el tamaño de fuente*/
         font-size: 12px;
     }
 
-    .header-main-nav li {
+    .header-main-nav li {/*Damos un margen */
         margin: 0 1.4rem;
     }
 
 }
 
-@media screen and (max-width:1000px) {
-    .s-header {
+@media screen and (max-width:1000px) { /*Aplicamos estilos específicos cuando la pantalla del dispositivo tiene un ancho máximo de  píxeles. 1000*/
+    .s-header { /*El texto lo alineamos a la derecha */
         text-align: right;
     }
 
-    .header-nav-wrap {
-        margin-right: 36px;
+    .header-nav-wrap { /*Damos un margen*/
+        margin-right: 36px; 
     }
 
-    .header-nav-wrap .header-social {
+    .header-nav-wrap .header-social { /*No asignamos nada */
         display: none;
     }
 }
 
-@media screen and (max-width:800px) {
-    .s-header {
+@media screen and (max-width:800px) { /*Aplicamos estilos específicos cuando la pantalla del dispositivo tiene un ancho máximo de 800 píxeles. */
+    .s-header {/*Damos una posicion un fondo */
         background-color: #050505;
         position: fixed;
         top: 0;
     }
 
-    .header-logo img {
+    .header-logo img {/*Damos ancho y altura */
         width: 128px;
         height: 30px;
     }
 
-    .header-nav-wrap {
+    .header-nav-wrap { /*damos una alineacion al texto un ancho y altura un fondo */
         display: none;
         text-align: left;
         height: auto;
@@ -344,7 +344,7 @@ h5, .h5, h6, .h6{
 
     }
 
-    .header-nav-wrap .header-main-nav {
+    .header-nav-wrap .header-main-nav { /*Damos una margen un borde, etc*/
         display: block;
         padding-left: 0;
         height: auto;
@@ -352,40 +352,40 @@ h5, .h5, h6, .h6{
         border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    .header-nav-wrap .header-main-nav li {
+    .header-nav-wrap .header-main-nav li { /*Damos una margen un borde, color, etc*/
         display: block;
         margin: 0;
         padding: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    .header-nav-wrap .header-main-nav li a {
+    .header-nav-wrap .header-main-nav li a { /*Establecemos un relleno y una altura de linea */
         padding: 18px 0;
         line-height: 20px;
     }
 
-    .header-nav-wrap .header-social {
+    .header-nav-wrap .header-social { /*Difinimos el elemento como un bloque y una posicion*/
         display: block;
         position: static;
 
     }
 
-    .header-nav-wrap .header-social li {
+    .header-nav-wrap .header-social li { /*Damos un margen y un tamaño de fuente*/
         font-size: 1.8rem;
         margin-right: 1.6rem;
     }
 
-    .header-nav-wrap .header-social li a {
+    .header-nav-wrap .header-social li a {/*damos un altura de linea*/
         line-height: 36px;
     }
 
-    .header-menu-toggle {
+    .header-menu-toggle { /*Definimos un elemento en bloque */
         display: block;
     }
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) { /*Aplicamos estilos específicos cuando la pantalla del dispositivo tiene un ancho máximo de 600 píxeles. */
     .header-logo {
         left: 35px;
     }
@@ -395,8 +395,8 @@ h5, .h5, h6, .h6{
 /*--------------------------------------------------------------------------------------------
   * hacer que el menu sea visible en una pantalla larga
   ---------------------------------------------------------------------------------------------*/
-@media only screen and (min-width:801px) {
-    .header-nav-wrap {
+@media only screen and (min-width:801px) { /*Aplicamos estilos específicos cuando la pantalla del dispositivo tiene un ancho máximo de 801 píxeles. */
+    .header-nav-wrap { /*Definimos un elemente en bloque */ 
         display: block !important;
     }
 }
@@ -405,14 +405,14 @@ h5, .h5, h6, .h6{
  * # intro 
  *
  * ------------------------------------------------------------------- */
-.s-intro {
+.s-intro { /*Damos altura anchura y un fondo y una altura miima */
     width: 100%;
     height: 100vh;
     min-height: 792px;
     background-color: #050505;
 }
 
-.intro-content {
+.intro-content { /* Damos un alura anchura un espacio posicion*/
     height: 100%;
     max-width: 1140px;
     padding-top: 20vh;
@@ -422,7 +422,7 @@ h5, .h5, h6, .h6{
     position: relative;
 }
 
-.intro-pic {
+.intro-pic { /*Damos un fondo una posicion */
     background-color: #02182c;
     background-repeat: no-repeat;
     background-position: top center;
@@ -435,7 +435,7 @@ h5, .h5, h6, .h6{
     left: 50%;
 }
 
-.intro-pic::before {
+.intro-pic::before { /*Damos posicion anchura altura y una opacidad */
     content: "";
     position: absolute;
     top: 0;
